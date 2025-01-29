@@ -1,0 +1,54 @@
+/* WelcomeMessage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Courgette&display=swap');
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.welcome-text {
+  font-size: 6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
