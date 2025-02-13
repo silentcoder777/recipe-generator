@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import { WelcomeText } from './landingPage';
-import "./welcomeMessage.css"
+import { WelcomePage } from './landingPage';
+import "./landingPage.css"
 
 function App() {
   return (
-      <WelcomeText/>
+    <div>
+      <WelcomePage/>
+    </div>
   );
 }
 

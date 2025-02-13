@@ -1,0 +1,143 @@
+/* WelcomeMessage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Courgette&display=swap');
+
+.welcome-container {
+  
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.welcome-text {
+  font-size: 6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-bottom: 10px;
+  top: 20px; /* Position it 20px from the top */
+  left: 50%; /* Center the text horizontally */
+  transform: translateX(-50%); /* Adjust for exact centering by moving it back */
+  width: 100%; /* Ensure text is centered on the page */
+  text-align: center; /* Center align the text */
+  z-index: 1; /* Ensure it stays above other elements */
+  
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.input-box {
+  padding: 15px;
+  width: 250px;
+  border-radius: 25px;
+  border: 2px solid #ddd;
+  font-size: 1.1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Focus effect for input */
+.input-box:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Placeholder styling */
+.input-box::placeholder {
+  color: #aaa;
+}
+
+.input-text-message {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #555;
+  margin-top: 150px;
+  line-height: 1.4;
+  margin-top: 100px;
+  padding: 0 20px; /* Optional padding for spacing */
+  text-align: center; /* Ensure the text is centered */
+}
+
+.submit-btn {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-size: 16px; /* Font size */
+  padding: 12px 24px; /* Padding for a larger button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor indicates it is clickable */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  margin-left: 40px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly grow on hover */
+}
+
+.submit-btn:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.submit-btn:active {
+  transform: scale(1); /* Reset size on click */
+  background-color: #397d3a; /* Even darker green when clicked */
+}
+
+
+.response-box {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f3f4f8;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.response-box h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.response-box p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
