@@ -2,6 +2,9 @@ Problem statement -
 Input - Any recipe name
 Output - Generate recipe with specific ingredients
 
+### python main.py
+This will run the Flask App.
+
 ### `npm start`
 
 Runs the app in the development mode.\
